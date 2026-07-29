@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Blooming Memories</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HALAMAN PEMBUKA -->
+
+    <section id="opening" class="page active">
+
+        <div class="main-card opening-card">
+
+            <div class="sparkle">✦ ✧ ✦</div>
+
+            <img
+                src="assets/opening.png"
+                alt="Birthday illustration"
+                class="opening-image"
+            >
+
+            <p class="eyebrow">
+                Haii Ayamoraa
+            </p>
+
+            <h1>
+                Happy Birthday
+            </h1>
+
+            <p class="description">
+                Hehe, anggep aja sekarang udah <br>
+                pukul 00.00 tanggal 30 Juli 2026 yaa.
+
+                <span class="small-note">
+                    Aku gamau kalah sama kamu nih. 
+                    Kemarin kamu pas aku <br> ultah jadi first,
+                    semoga aku belum keduluan orang lain.
+                </span>
+            </p>
+
+            <button id="openGift" type="button">
+                Miann, Boleh Aya pencet ini 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN PIN -->
+
+    <section id="passcode" class="page hidden">
+
+        <div class="main-card pin-card">
+
+            <div class="sparkle">✦ ✧ ✦</div>
+
+            <h2>
+                Masukin PINnya Ayaa
+            </h2>
+
+            <p class="subtitle">
+                Kalau Aya bener, nanti ku kasih hadiah 🍦
+            </p>
+
+            <div id="pinDisplay" class="pin-display">
+                <div class="pin-box"></div>
+                <div class="pin-box"></div>
+                <div class="pin-box"></div>
+                <div class="pin-box"></div>
+                <div class="pin-box"></div>
+                <div class="pin-box"></div>
+            </div>
+
+            <div class="keyboard">
+
+                <button class="number-key" data-number="1">1</button>
+                <button class="number-key" data-number="2">2</button>
+                <button class="number-key" data-number="3">3</button>
+
+                <button class="number-key" data-number="4">4</button>
+                <button class="number-key" data-number="5">5</button>
+                <button class="number-key" data-number="6">6</button>
+
+                <button class="number-key" data-number="7">7</button>
+                <button class="number-key" data-number="8">8</button>
+                <button class="number-key" data-number="9">9</button>
+
+                <div class="empty-key"></div>
+
+                <button class="number-key" data-number="0">0</button>
+
+                <button id="deleteKey" class="delete-key">
+                    ⌫
+                </button>
+
+            </div>
+
+            <p id="pinWarning" class="pin-warning"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPUP PIN SALAH -->
+
+    <div id="pinPopup" class="modal hidden">
+
+        <div class="modal-card">
+
+            <img
+                src="assets/pinsalah.png"
+                alt="PIN salah"
+                class="popup-image"
+            >
+
+            <h2>
+                Yahhh Salaahhhh 😭
+            </h2>
+
+            <p>
+                Mau coba lagi atau lihat hint?
+            </p>
+
+            <div class="modal-buttons">
+
+                <button id="tryAgainBtn">
+                    Mauuuu
+                </button>
+
+                <button id="openHintBtn" class="blue-button">
+                    Hint dehh
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HALAMAN HINT -->
+
+    <section id="hintPage" class="page hidden">
+
+        <div class="main-card hint-card">
+
+            <div class="sparkle">✦ ✧ ✦</div>
+
+            <h2>
+                Hehe ini diaa PINnyaa
+            </h2>
+
+            <p class="subtitle">
+                Wkwkwk gatau PINnya yaa? 😆<br>
+                Iyalahh kan Aya tida nanya ke akuu.
+            </p>
+
+            <div id="hintGrid" class="hint-grid"></div>
+
+            <button id="backToPinBtn">
+                Mau cobaa lagii
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN LOADING -->
+
+    <section id="loadingPage" class="page hidden">
+
+        <div class="main-card loading-card">
+
+            <div class="sparkle">✦ ✧ ✦</div>
+
+            <div class="dino-track">
+
+                <img
+                    src="assets/dino.gif"
+                    alt="Dino running"
+                    class="dino"
+                >
+
+            </div>
+
+            <h2>
+                Engga Lagi Ngejar Dino Kann? <br> Pelan-Pelan Aja Yaa!
+            </h2>
+
+            <p class="subtitle">
+                Hehe mian yaa kalau websitenya jelek,
+                baru pertama kali buat...
+            </p>
+
+            <div id="loadingMenu" class="loading-menu hidden">
+
+                <button id="rushBtn">
+                    Ayaa buru-buru yaa?
+                </button>
+
+                <button id="chooseMusicBtn" class="blue-button">
+                    🎵 Pilih lagu kesukaan dulu
+                </button>
+
+                <p id="musicMessage" class="music-message hidden">
+                    Ini lagu favorit Aya kannn <br>
+                    Enjoyy yaaa!! ✨
+                </p>
+
+
+                <div id="miniPlayer" class="mini-player hidden">
+
+                    <img
+                        id="miniAlbum"
+                        src="assets/blue.jpg"
+                        alt="Album"
+                    >
+
+                    <div class="mini-info">
+
+                        <strong id="selectedSong">
+                            Blue
+                        </strong>
+
+                        <small id="selectedArtist">
+                            Yung Kai
+                        </small>
+
+                    </div>
+
+                    <button id="changeSongBtn">
+                        Ganti
+                    </button>
+
+                </div>
+
+                <button id="continueBtn" class="hidden">
+                    Yuk lanjut →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- POPUP KALAU PILIH AYAA BURU-BURU -->
+<div id="rushPopup" class="modal hidden">
+
+    <div class="modal-card rush-popup-card">
+
+        <h2>
+            Yahh...
+        </h2>
+
+        <p class="rush-message">
+            Yaudah deh kalau Aya buru-buru,
+            emang biasanya gitu kan...
+        </p>
+
+        <p class="rush-countdown-text">
+            Lanjut dalam
+            <strong id="rushCountdown">7</strong> 
+            detik 
+        </p>
+        
+    </div>
+
+</div>
+
+<!-- POPUP PIN BENAR -->
+
+<div id="pinCorrectPopup" class="modal hidden">
+
+    <div class="modal-card rush-popup-card">
+
+        <h2>
+            Yeayyy Benerrr!! 🎉
+        </h2>
+
+        <p class="rush-message">
+            PIN-nya benar Ayaa 🤍<br>
+            Hadiahnya kebuka nihh, wkwk
+        </p>
+
+        <p class="rush-countdown-text">
+            Lanjut dalam
+            <strong id="pinCorrectCountdown">
+                3
+            </strong>
+            detik
+        </p>
+
+    </div>
+
+</div>
+
+    <!-- MODAL PILIH MUSIK -->
+
+    <div id="musicModal" class="modal hidden">
+
+        <div class="modal-card music-modal-card">
+
+            <h2>
+                Pilih lagu kamu 🤍
+            </h2>
+
+            <div id="songDisplay" class="song-display">
+
+                <img
+                    id="songAlbum"
+                    src="assets/blue.jpg"
+                    alt="Album lagu"
+                >
+
+                <h3 id="songTitle">
+                    Blue
+                </h3>
+
+                <p id="songArtist">
+                    Yung Kai
+                </p>
+
+                <button id="playSongBtn" class="round-button">
+                    ▶
+                </button>
+
+            </div>
+
+            <div class="song-navigation">
+
+                <button id="previousSongBtn" class="blue-button">
+                    ←
+                </button>
+
+                <span id="songCounter">
+                    1 / 3
+                </span>
+
+                <button id="nextSongBtn" class="blue-button">
+                    →
+                </button>
+
+            </div>
+
+            <button id="selectSongBtn">
+                Aku mau yang ini 🎵
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- HALAMAN KUIS -->
+
+    <section id="quizPage" class="page hidden">
+
+        <div class="quiz-wrapper">
+
+            <div id="quizCard" class="quiz-card">
+
+                <div class="quiz-front">
+
+                    <img
+                        id="quizImage"
+                        src="assets/foto1.jpg"
+                        alt="Foto pertanyaan"
+                        class="quiz-image"
+                    >
+
+                    <h2 id="quizQuestion">
+                        Siapa orang ini?
+                    </h2>
+
+                    <input
+                        id="quizAnswer"
+                        type="text"
+                        placeholder="Tulis jawaban..."
+                        autocomplete="off"
+                    >
+
+                    <button id="checkAnswerBtn">
+                        Cek Jawaban
+                    </button>
+
+                    <p id="quizFeedback" class="quiz-feedback"></p>
+
+                    <p
+                        id="flipQuizBtn"
+                        class="text-button hidden"
+                    >
+                        ✨ Ketuk Kartunya ✨
+                    </p>
+
+                    <p class="quiz-swipe-hint">
+                        ← Geser kartunya →
+                    </p>
+
+                </div>
+
+                <div class="quiz-back">
+
+                    <img
+                        id="quizBackImage"
+                        src="assets/foto1b.jpg"
+                        alt="?????"
+                        class="quiz-image"
+                    >
+
+                    <h2 id="quizBackTitle">
+                        Yeayy ❤️
+                    </h2>
+
+                    <p id="quizBackMessage">
+                        Selamat ulang tahun yaa 🥳
+                    </p>
+
+                    <button
+                        id="openLetterBtn"
+                        class="hidden"
+                    >
+                        Buka Lagii
+                    </button>
+
+                    <p class="quiz-swipe-hint">
+                        ← Geser kartunya →
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="quiz-navigation">
+
+                <button id="previousQuizBtn" class="blue-button">
+                    ←
+                </button>
+
+                <span id="quizCounter">
+                    1 / 4
+                </span>
+
+                <button id="nextQuizBtn" class="blue-button">
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN SURAT -->
+
+    <section id="letterPage" class="page hidden">
+
+        <div class="main-card letter-card">
+
+            <div class="sparkle">✦ ✧ ✦</div>
+
+            <h2>
+                Untuk Kamu
+            </h2>
+
+            <div class="letter-content">
+
+                <p>
+                    Haiii kamu, iyaa kamu Alyaamoraaa 👋
+                </p>
+
+                <p>
+                    Selamat ulang tahun yaa 🎂✨
+                    Semoga hari ini menjadi hari yang penuh
+                    kebahagiaan buat kamu.
+                </p>
+
+                <p>
+                    Semoga di usia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, 
+                    dan kemudahan dalam setiap langkah yang kamu ambil. Semoga semua rencana yang 
+                    sedang kamu perjuangkan berjalan dengan lancar dan apa yang kamu impikan bisa tercapai satu per satu.
+.
+                </p>
+
+                <p>
+                    Terima kasih sudah menjadi dirimu sendiri. 
+                    Semoga kamu selalu dikelilingi oleh orang-orang yang baik, 
+                    punya banyak alasan untuk tersenyum, dan bisa menikmati setiap hal yang akan datang.
+                    Maaf kalo pernah ngerasa tidaa nyaman beberapa kali karena aku, sekali lagi miann yaa 🙏🏼
+.
+                </p>
+
+                <p>
+                    Jangan lupa tetap tersenyum yaa, btw senyumanmu manis banget wkwk
+                </p>
+
+            </div>
+
+            <button id="openMemoryBtn">
+                Lihat
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN GALERI -->
+
+    <section id="memoryPage" class="page hidden">
+
+        <div class="memory-wrapper">
+
+            <h2>
+                ?????
+            </h2>
+
+            <div id="memoryCard" class="memory-photo-card">
+
+                <img
+                    id="memoryImage"
+                    src="assets/foto1.jpg"
+                    alt="?????"
+                >
+
+                <p id="memoryCaption">
+                    ?????
+                </p>
+
+            </div>
+
+            <div class="memory-navigation">
+
+                <button id="previousMemoryBtn" class="blue-button">
+                    ←
+                </button>
+
+                <span id="memoryCounter">
+                    1 / 3
+                </span>
+
+                <button id="nextMemoryBtn" class="blue-button">
+                    →
+                </button>
+
+            </div>
+
+            <button id="finishBtn">
+                Lanjut
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN PENUTUP -->
+
+    <section id="closingPage" class="page hidden">
+
+        <div class="main-card closing-card">
+
+            <div class="sparkle">✦ ✧ ✦</div>
+
+            <h1>
+                Thank You
+            </h1>
+
+            <p>
+                Setiap novel akan menemukan halaman terakhirnya, ntah itu diakhiri 
+                dengan TAMAT atau dengan COMING SOON
+            </p>
+
+            <p>
+                Dan juga setiap puisi akan tiba pada bait penutupnya
+            </p>
+
+            <p>
+                Begitu pula website kecil ini, hehe
+            </p>
+
+            <p>
+                Terima kasih sudah bersedia menemani website ini sampai bagian akhir.
+                Terima kasih sudah meluangkan waktu untuk membaca setiap kata, menikmati setiap halaman,
+                dan menghidupkan cerita sederhana yang ingin kusampaikan.
+            </p>
+
+<p>
+                Miann kalo masih banyak kekurangan, karena yaa kalo mau tau cerita buatnya boleh menghubungi CP:08998705251 ini wkwk
+            </p>
+
+<p>
+                Terakhir kuucapkann
+            </p>
+
+            <h2>
+                🌸 Happy Birthday Alyamoraa 🌸 <br>
+                Semangat Belajarrrnyaaa, BTW belajar bareng lagi yuu...
+            </h2>
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- AUDIO -->
+
+    <audio id="musicPlayer" loop></audio>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
