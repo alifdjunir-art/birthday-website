@@ -43,7 +43,7 @@ const hints = [
     },
     {
         number: "05",
-        image: "assets/kartu5.png",
+        image: "assets/kartu5.PNG",
         clue: "Seminggu ada berapa harii?"
     },
     {
