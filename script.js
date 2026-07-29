@@ -28,17 +28,17 @@ const hints = [
     },
     {
         number: "02",
-        image: "assets/kartu2.png",
+        image: "assets/kartu2.PNG",
         clue: "Angka Favorit kamuu..."
     },
     {
         number: "03",
-        image: "assets/kartu3.png",
+        image: "assets/kartu3.PNG",
         clue: "Angka Favorit kitaa..."
     },
     {
         number: "04",
-        image: "assets/kartu4.png",
+        image: "assets/kartu4.PNG",
         clue: "Warna pelangi ada berapaa?"
     },
     {
@@ -48,7 +48,7 @@ const hints = [
     },
     {
         number: "06",
-        image: "assets/kartu6.png",
+        image: "assets/kartu6.PNG",
         clue: "Nada musik ada berapaa?"
     }
 ];
@@ -87,8 +87,8 @@ const songs = [
 const quizzes = [
     {
         question: "Haii ciee lagi HBD niii, btw tau aku tidaa?",
-        frontImage: "assets/foto1.png",
-        backImage: "assets/foto1b.png",
+        frontImage: "assets/foto1.PNG",
+        backImage: "assets/foto1b.PNG",
 
         answers: [
             "joyaaa",
@@ -105,8 +105,8 @@ userAnswer: ""
     },
     {
         question: "Hehe, Ayaa inget akuu tidaa siapaa?",
-        frontImage: "assets/foto2.png",
-        backImage: "assets/foto2b.png",
+        frontImage: "assets/foto2.PNG",
+        backImage: "assets/foto2b.PNG",
 
         answers: [
             "piyooo",
@@ -123,8 +123,8 @@ userAnswer: ""
     },
     {
         question: "Kalo ini siapa Aya?",
-        frontImage: "assets/foto3.png",
-        backImage: "assets/foto3b.png",
+        frontImage: "assets/foto3.PNG",
+        backImage: "assets/foto3b.PNG",
 
         answers: [
             "alif djuni",
@@ -1504,7 +1504,7 @@ function createFlyingIceCream() {
         document.createElement("img");
 
     iceCream.src =
-        "assets/eskrim.png";
+        "assets/eskrim.PNG";
 
     iceCream.alt = "";
 
