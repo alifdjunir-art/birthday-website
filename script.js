@@ -63,10 +63,10 @@ const songs = [
         title: "I Like Me Better",
         artist: "Lauv",
         album: "assets/lagu1.jpeg",
-        audio: "assets/lagu1.mp3"
+        audio: "assets/lagu3.mp3"
     },
     {
-        title: "I Like Me Better Off My Face",
+        title: "Off My Face",
         artist: "Justin Bieber",
         album: "assets/lagu2.jpeg",
         audio: "assets/lagu2.mp3"
@@ -75,7 +75,7 @@ const songs = [
         title: "A Thausand Years",
         artist: "Cristina Perry and Steve Kazee",
         album: "assets/lagu3.jpeg",
-        audio: "assets/lagu3.mp3"
+        audio: "assets/lagu1.mp3"
     }
 ];
 
