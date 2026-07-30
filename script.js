@@ -100,8 +100,6 @@ const quizzes = [
         backMessage:
             "Haii Ayaa, Aku Joyaa, Selamat ulang tahun yaa🥳 Semogaa sehat selaluu, biar bisa ketemu aku teruss wkwk, btw traktir dongg aku suka permenn, kamu main game ku tidaa? mainn dongg biar kita bisa ketemu tiap harii, ketemu sama my bos juga tiap hari gapapaa, hehee",
 
-      smallMessage:
-            "Cukup tau sih aku kasih kuee tida direspon...."
          
         solved: false,
 userAnswer: ""
