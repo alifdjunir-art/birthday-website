@@ -1091,7 +1091,7 @@ h3 {
     color: var(--pink);
 
     font-size:
-        clamp(31px, 5vh, 41px);
+        clamp(25px, 5vh, 35px);
 }
 
 
