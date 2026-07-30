@@ -2196,10 +2196,10 @@ h3 {
     /* Halaman Hint pada HP */
 
 .loading-card h2 {
-    color: var(--pink);
+    color: var(--pink) !important;
 
     font-size:
-        clamp(25px, 5vh, 35px);
+        clamp(25px, 5vh, 35px) !important;
 }
 
 #hintPage {
