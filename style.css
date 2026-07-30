@@ -2116,6 +2116,15 @@ h3 {
         font-size: clamp(9px, 1.5vh, 10.5px) !important;
     }
 
+       .note {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: clamp(9px, 1.25vh, 11px) !important;
+        line-height: 1.4 !important;
+   
+    }
 
     #openGift {
         width: 100% !important;
@@ -2185,6 +2194,13 @@ h3 {
     }
 
     /* Halaman Hint pada HP */
+
+.loading-card h2 {
+    color: var(--pink);
+
+    font-size:
+        clamp(25px, 5vh, 35px);
+}
 
 #hintPage {
     padding: 6px !important;
