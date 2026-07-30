@@ -413,6 +413,21 @@ h3 {
     line-height: 1.48;
 }
 
+.small-description {
+    max-width: 350px;
+
+    margin:
+        clamp(9px, 1.7vh, 14px)
+        auto
+        clamp(11px, 2vh, 17px);
+
+    color: var(--text);
+
+    font-size:
+        clamp(10px, 1.5vh, 10px);
+
+    line-height: 1.48;
+}
 
 .small-note {
     display: block;
